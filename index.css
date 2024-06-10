@@ -1,0 +1,50 @@
+.nav-link {
+    color: azure;
+    font-weight: 900;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+}
+
+.nav-item {
+    border-right: solid thin grey;
+}
+
+.nav-item:hover {
+    border-right: solid thin aquamarine;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.section {
+    border-top: solid thin darkgray;
+    padding: 10px;
+}
+p {
+    font-size: 18px;
+}
+
+.fa {
+    padding: auto;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-github {
+    background-color: #333333;
+    color: white;
+}
