@@ -14,7 +14,7 @@
     <title>Samuel Markham - Home</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body onload="getAge()">
+<body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
             <div class="container-sm">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
@@ -23,14 +23,23 @@
                 <div class="collapse navbar-collapse" id="collapseNavbar">
                 <ul id="navBar" class="navbar-nav">
                     <li class="nav-item">
-                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="display-6">Home</span></a></button>
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">Home</span></a></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn"><a href="#" class="nav-link"> <span class="display-6">Projects</span></a></button>
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">About Me</span></a></button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="display-6">Hobbies</span></a></button>
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">Experience</span></a></button>
                     </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">Projects</span></a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">Gallery</span></a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a href="#" class="nav-link"><span class="quicksand display-6">Blog</span></a></button>
+                    </li> 
                 </ul> 
             </div>
         </nav>
@@ -43,10 +52,10 @@
                     <h2 class="quicksand">Who am I?</h2>
                     <table class="table">
                         <tr>
-                            <td><p>A lecturer of Digital Technology and IT with a passion for software engineering and web development</p></td>
+                            <td><p>Lecturer of Digital Technology and IT with a passion for software engineering and web development</p></td>
                     </tr>
                     <tr>
-                        <td><p>Background in theoretical physics from University of York</p></td>
+                        <td><p>Masters in theoretical physics from University of York</p></td>
                     </tr>
                     <tr>
                         <td><p>Avid amateur guitarist and photographer</p></td>
@@ -75,13 +84,10 @@
                             <td><p>Whitehaven, Cumbria</p></td>
                         </tr>
                     </table>
-                    <a href="https://www.linkedin.com/in/samuel-j-markham/" class="fa fa-linkedin" target="_blank"></a>
-                    <a href="https://github.com/asdwerte1" class="fa fa-github" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/samuel-j-markham/" class="fa fa-linkedin" target="_blank" onmouseover="growIcon(this)" onmouseout="shrinkIcon(this)"></a>
+                    <a href="https://github.com/asdwerte1" class="fa fa-github" target="_blank" onmouseover="growIcon(this)" onmouseout="shrinkIcon(this)"></a>
                 </div>
             </div>
-        </div>
-        <div class="container-sm pt-2">
-            <h2 class="quicksand">Badges</h2>
         </div>
 </body>
 </html>
