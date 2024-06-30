@@ -7,20 +7,13 @@
     color: aquamarine;
 }
 
-#last-nav {
-    border: none;
-}
-
 .nav-item {
     border-right: solid thin grey;
+    border-radius: 0;
 }
 
 .nav-item:hover {
     border-right: solid thin aquamarine;
-}
-
-h1 {
-    font-weight: bolder;
 }
 
 .section {
@@ -61,4 +54,35 @@ footer {
     width: 150px;
     padding: 0;
     margin: 0;
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-bottom: solid thin #495057;
+    border-top: solid thin #495057;
+}
+
+.content-expander:hover {
+    color: aquamarine;
+}
+
+.badge-img {
+    width: 140px;;
+    height: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding: auto;
+}
+
+
+.modal-btn {
+    margin-bottom: 10px;
 }
