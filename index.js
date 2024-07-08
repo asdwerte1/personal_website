@@ -41,11 +41,11 @@ $(document).ready(function () {
 
         item.css("position", "relative");
         item.append(underline);
-        underline.animate({ width: "100%" }, fast);
+        underline.animate({ width: "100%" }, 300);
     },
     function () {
         const item = $(this);
-        item.find(".underline").animate({ width: "0" }, fast, function () {
+        item.find(".underline").animate({ width: "0" }, 300, function () {
             $(this).remove();
         });
     });
