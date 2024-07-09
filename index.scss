@@ -1,0 +1,162 @@
+$text-colour: #DEE2E6; //White text colour
+$bg-color: #212529; //Dark grey background colour
+$aqmr: #7FFFD4; //Aquamarine
+$trindg: #7C77B9; //Tropical indigo
+$blue: #1D8A99; //Blue (munsell)
+
+
+// Nav styling 
+
+.nav-link {
+    color: azure;
+    font-weight: 900;
+    background-color: $trindg;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: $aqmr;
+    background-color: $bg-color;
+}
+
+.nav-item {
+    border-right: solid medium $bg-color;
+    margin-right: 5px;
+    border-radius: 0;
+    transition: border-right 0.5s ease;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.nav-item:hover {
+    border-right: solid medium $aqmr;
+}
+
+.navbar-toggler {
+    width: 25%;
+}
+// ----------------------------------------//
+.section {
+    border-top: solid thin darkgray;
+    padding: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.fa {
+    padding: auto;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background-color: #333333;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-image {
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-imgs {
+    background-color: $blue;
+    padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#footer-info {
+    padding: 10px 30px 0 30px;
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-bottom: solid thin #495057;
+    border-top: solid thin #495057;
+}
+
+//Content expanders
+
+.content-expander {
+    border: solid thin lightgray;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: $trindg;
+    transition: background-color 0.5s ease; /* Add transition for background color */
+  }
+  
+  .content-expander:hover {
+    color: $aqmr;
+    background-color: $bg-color;
+  }
+  
+
+//-----------------------------------------//
+
+.badge-img {
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding: auto;
+}
+
+// Modal buttons styling
+
+@keyframes modal-btn-animate-hover {
+    from {border: solid medium grey;}
+    to {border: solid medium $aqmr;}
+  }
+  
+  @keyframes modal-btn-animate-unhover {
+    from {border: solid medium $aqmr;}
+    to {border: solid medium grey;}
+  }
+  
+  .modal-btn {
+    margin-bottom: 10px;
+    border: solid medium grey;
+    border-radius: 10px;
+  }
+  
+  .modal-btn:hover {
+    background-color: #333333;
+    border: solid medium $aqmr;
+    animation: modal-btn-animate-hover 0.5s;
+  }
+  
+  .modal-btn:not(:hover) {
+    animation: modal-btn-animate-unhover 0.5s;
+  }
+  
