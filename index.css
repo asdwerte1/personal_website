@@ -1,88 +1,87 @@
 .nav-link {
-    color: azure;
-    font-weight: 900;
+  color: azure;
+  font-weight: 900;
 }
 
 .nav-link:hover {
-    color: aquamarine;
+  color: aquamarine;
 }
 
 .nav-item {
-    border-right: solid thin grey;
-    border-radius: 0;
+  border-right: solid thin grey;
+  border-radius: 0;
 }
 
 .nav-item:hover {
-    border-right: solid thin aquamarine;
+  border-right: solid thin aquamarine;
 }
 
 .section {
-    border-top: solid thin darkgray;
-    padding: 10px;
+  border-top: solid thin darkgray;
+  padding: 10px;
 }
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .fa {
-    padding: auto;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
-  
+  padding: auto;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
 .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+  background: #007bb5;
+  color: white;
+}
 
 .fa-github {
-    background-color: #333333;
-    color: white;
+  background-color: #333333;
+  color: white;
 }
 
 footer {
-    padding: 20px;
+  padding: 20px;
 }
 .footer-image {
-    height: 150px;
-    width: 150px;
-    padding: 0;
-    margin: 0;
+  height: 150px;
+  width: 150px;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-item {
-    width: 100%;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    border-bottom: solid thin #495057;
-    border-top: solid thin #495057;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  border-bottom: solid thin #495057;
+  border-top: solid thin #495057;
 }
 
 .content-expander:hover {
-    color: aquamarine;
+  color: aquamarine;
 }
 
 .badge-img {
-    width: 140px;;
-    height: 140px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 140px;
+  height: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-img {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-    padding: auto;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding: auto;
 }
 
-
 .modal-btn {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
