@@ -3,13 +3,40 @@ $bg-color: #212529; //Dark grey background colour
 $aqmr: #7FFFD4; //Aquamarine
 $trindg: #7C77B9; //Tropical indigo
 $blue: #1D8A99; //Blue (munsell)
+$darkBlue: #1B264F;
+$green: #134611;
+
+body {
+    overflow-x: hidden;
+}
+
+#page-heading {
+    background-color: $green;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.page-heading-ext {
+    background-color: #134611;
+}
+
+#content {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: solid thin darkgrey;
+}
 
 // Nav styling 
+
+nav {
+    background-color: $darkBlue;
+}
 
 .nav-link {
     color: azure;
     font-weight: 900;
-    background-color: $trindg;
+    background-color: $darkBlue;
     transition: background-color 0.5s ease;
     border-radius: 10px;
 }
@@ -20,7 +47,7 @@ $blue: #1D8A99; //Blue (munsell)
 }
 
 .nav-item {
-    border-right: solid medium $bg-color;
+    border-right: solid medium $darkBlue;
     margin-right: 5px;
     border-radius: 0;
     transition: border-right 0.5s ease;
@@ -65,28 +92,6 @@ p {
 .fa-github {
     background-color: #333333;
     color: white;
-}
-
-footer {
-    padding: 20px 0 0 0;
-}
-
-.footer-image {
-    height: 150px;
-    width: 150px;
-    padding: 0;
-    margin: 0;
-}
-
-#footer-imgs {
-    background-color: $blue;
-    padding-top: 10px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#footer-info {
-    padding: 10px 30px 0 30px;
 }
 
 .dropdown-item {
@@ -156,3 +161,28 @@ footer {
     animation: modal-btn-animate-unhover 0.5s;
   }
   
+
+// Footer Styling------------------------------//
+
+footer {
+    padding: 0;
+}
+
+.footer-image {
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-imgs {
+    background-color: $blue;
+    padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#footer-info {
+    padding: 10px 30px 0 30px;
+    background-color: $green;
+}
