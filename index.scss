@@ -4,7 +4,6 @@ $aqmr: #7FFFD4; //Aquamarine
 $trindg: #7C77B9; //Tropical indigo
 $blue: #1D8A99; //Blue (munsell)
 
-
 // Nav styling 
 
 .nav-link {
@@ -69,9 +68,7 @@ p {
 }
 
 footer {
-    padding: 20px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px 0 0 0;
 }
 
 .footer-image {
@@ -93,7 +90,6 @@ footer {
 }
 
 .dropdown-item {
-    width: 100%;
     text-align: center;
     padding: 5px 0 5px 0;
     border-bottom: solid thin #495057;
@@ -105,7 +101,7 @@ footer {
 .content-expander {
     border: solid thin lightgray;
     padding: 2%;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: $trindg;
     transition: background-color 0.5s ease; /* Add transition for background color */
   }
