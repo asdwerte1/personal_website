@@ -37,13 +37,11 @@ nav {
     color: azure;
     font-weight: 900;
     background-color: $darkBlue;
-    transition: background-color 0.5s ease;
     border-radius: 10px;
 }
 
 .nav-link:hover {
     color: $aqmr;
-    background-color: $bg-color;
 }
 
 .nav-item {
@@ -62,6 +60,28 @@ nav {
 .navbar-toggler {
     width: 25%;
     height: 50px;
+}
+
+.project-link {
+    border: none;
+    padding-top: 10px;
+    background-color: $darkBlue;
+}
+
+.dropdown-menu {
+    background-color: $darkBlue;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.dropdown-item {
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    font-size: 24px;
 }
 // ----------------------------------------//
 .section {
@@ -93,13 +113,6 @@ p {
 .fa-github {
     background-color: #333333;
     color: white;
-}
-
-.dropdown-item {
-    text-align: center;
-    padding: 5px 0 5px 0;
-    border-bottom: solid thin #495057;
-    border-top: solid thin #495057;
 }
 
 //Content expanders
