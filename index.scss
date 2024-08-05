@@ -95,6 +95,8 @@ nav {
     text-align: center;
     padding: 5px 0 5px 0;
     font-size: 24px;
+    border-top: solid thin $trindg;
+    margin-bottom: 5px;
     border-bottom: solid thin $darkBlue;
     transition: border-bottom 0.5s ease;
 }
