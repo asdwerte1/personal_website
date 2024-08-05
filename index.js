@@ -36,3 +36,10 @@ $(document).ready(function () {
         shrinkIcon(this);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const projectLinks = document.getElementsByClassName("project-link");
+    Array.from(projectLinks).forEach(element => {
+        element.setAttribute("target", "_blank");
+    });
+});

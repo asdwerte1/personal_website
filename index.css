@@ -1,5 +1,10 @@
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 #page-heading {
@@ -11,6 +16,7 @@ body {
 
 .page-heading-ext {
   background-color: #134611;
+  padding: 0;
 }
 
 #content {
@@ -19,8 +25,17 @@ body {
   border-bottom: solid thin darkgrey;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.float-to-end {
+  float: inline-end;
+}
+
 nav {
   background-color: #1B264F;
+  margin: 0;
 }
 
 .nav-link {
@@ -56,12 +71,11 @@ nav {
   border: none;
   padding-top: 10px;
   background-color: #1B264F;
+  text-wrap: wrap;
 }
 
 .dropdown-menu {
   background-color: #1B264F;
-  border: none;
-  border-radius: 0;
   padding: 10px;
 }
 
@@ -72,6 +86,14 @@ nav {
   text-align: center;
   padding: 5px 0 5px 0;
   font-size: 24px;
+  border-bottom: solid thin #1B264F;
+  transition: border-bottom 0.5s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #1B264F;
+  color: #7FFFD4;
+  border-bottom: solid thin #7FFFD4;
 }
 
 .section {
@@ -185,6 +207,7 @@ footer {
 #footer-info {
   padding: 10px 30px 0 30px;
   background-color: #134611;
+  margin: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
