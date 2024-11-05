@@ -5,10 +5,12 @@ $trindg: #7C77B9; //Tropical indigo
 $blue: #1D8A99; //Blue (munsell)
 $darkBlue: #1B264F;
 $green: #134611;
+$transTime: 0.8s;
 
 body {
     overflow-x: hidden !important;
 }
+
 .container {
     max-width: 100% !important;
     overflow-x: hidden !important;
@@ -62,7 +64,7 @@ nav {
     border-right: solid medium $darkBlue;
     margin-right: 5px;
     border-radius: 0;
-    transition: border-right 0.5s ease;
+    transition: border-right $transTime ease;
     padding: 0;
     padding-top: 5px;
 }
@@ -98,7 +100,7 @@ nav {
     border-top: solid thin $trindg;
     margin-bottom: 5px;
     border-bottom: solid thin $darkBlue;
-    transition: border-bottom 0.5s ease;
+    transition: border-bottom $transTime ease;
 }
 
 .dropdown-item:hover {
@@ -106,6 +108,7 @@ nav {
     color: $aqmr;
     border-bottom: solid thin $aqmr;
 }
+
 // ----------------------------------------//
 .section {
     border-top: solid thin darkgray;
@@ -126,6 +129,13 @@ p {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
+    scale: 1.0;
+    transition: scale $transTime ease;
+
+    &:hover {
+        scale: 1.1;
+        transition: scale $transTime ease;
+    }
 }
 
 .fa-linkedin {
@@ -145,14 +155,13 @@ p {
     padding: 2%;
     border-radius: 15px;
     background-color: $trindg;
-    transition: background-color 0.5s ease; /* Add transition for background color */
-  }
-  
-  .content-expander:hover {
-    color: $aqmr;
-    background-color: $bg-color;
-  }
-  
+    transition: background-color $transTime ease;
+
+    &:hover {
+        color: $aqmr;
+        background-color: $bg-color;
+    }
+}
 
 //-----------------------------------------//
 
@@ -173,31 +182,41 @@ p {
 // Modal buttons styling
 
 @keyframes modal-btn-animate-hover {
-    from {border: solid medium grey;}
-    to {border: solid medium $aqmr;}
-  }
-  
-  @keyframes modal-btn-animate-unhover {
-    from {border: solid medium $aqmr;}
-    to {border: solid medium grey;}
-  }
-  
-  .modal-btn {
+    from {
+        border: solid medium grey;
+    }
+
+    to {
+        border: solid medium $aqmr;
+    }
+}
+
+@keyframes modal-btn-animate-unhover {
+    from {
+        border: solid medium $aqmr;
+    }
+
+    to {
+        border: solid medium grey;
+    }
+}
+
+.modal-btn {
     margin-bottom: 10px;
     border: solid medium grey;
     border-radius: 10px;
-  }
-  
-  .modal-btn:hover {
+}
+
+.modal-btn:hover {
     background-color: #333333;
     border: solid medium $aqmr;
-    animation: modal-btn-animate-hover 0.5s;
-  }
-  
-  .modal-btn:not(:hover) {
-    animation: modal-btn-animate-unhover 0.5s;
-  }
-  
+    animation: modal-btn-animate-hover $transTime;
+}
+
+.modal-btn:not(:hover) {
+    animation: modal-btn-animate-unhover $transTime;
+}
+
 
 // Footer Styling------------------------------//
 

@@ -1,11 +1,3 @@
-function growIcon(element) {
-    element.style.transform = "scale(1.1)";
-}
-
-function shrinkIcon(element) {
-    element.style.transform = "scale(1)";
-}
-
 $(document).ready(function () {
     $(".nav-item").hover(function () {
         const item = $(this);
@@ -28,13 +20,6 @@ $(document).ready(function () {
                 $(this).remove();
             });
         });
-
-    $(".fa").mouseenter(function () {
-        growIcon(this);
-    });
-    $(".fa").mouseleave(function () {
-        shrinkIcon(this);
-    });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
