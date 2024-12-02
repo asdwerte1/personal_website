@@ -108,27 +108,52 @@ p {
 }
 
 .brand-btn {
+  display: inline-flex;
+  /* Flex alignment for inner SVG */
+  justify-content: center;
+  align-items: center;
   padding: 6px;
   font-size: 24px;
   width: 60px;
   height: 60px;
   text-align: center;
-  align-content: center;
-  text-decoration: none;
   margin: 5px 2px;
   border: solid thin transparent;
   border-radius: 45%;
-  scale: 1;
-  transition: scale 0.8s ease;
+  /* Circle button shape */
+  background-color: #f8f9fa;
+  /* Default button background */
+  color: currentColor;
+  /* Default icon color */
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 .brand-btn:hover {
-  scale: 1.1;
-  transition: scale 0.8s ease;
+  transform: scale(1.1);
+  background-color: #e0e0e0;
   cursor: pointer;
+}
+.brand-btn > .svg-inline--fa {
+  width: 60%;
+  /* Adjust SVG size */
+  height: 60%;
+  fill: currentColor;
 }
 
 .fa-linkedin {
-  background: #007bb5;
+  background-color: #007bb5;
+  /* LinkedIn color */
+  color: white;
+}
+
+.fa-github {
+  background-color: #333333;
+  /* GitHub color */
+  color: white;
+}
+
+.fa-docker {
+  background-color: #0db7ed;
+  /* Docker color */
   color: white;
 }
 
@@ -136,18 +161,8 @@ p {
   background-color: #007bb5;
 }
 
-.fa-github {
-  background-color: #333333;
-  color: white;
-}
-
 #github {
   background-color: #333333;
-}
-
-.fa-docker {
-  background-color: #0db7ed;
-  color: white;
 }
 
 #docker {
