@@ -119,6 +119,10 @@ p {
     font-size: 18px;
 }
 
+#social-btns>a {
+    border: none;
+}
+
 .brand-btn {
     display: inline-flex;
     /* Flex alignment for inner SVG */
@@ -131,17 +135,20 @@ p {
     text-align: center;
     margin: 5px 2px;
     border: solid thin transparent;
-    border-radius: 45%;
+    border-radius: 50%;
     /* Circle button shape */
     background-color: #f8f9fa;
     /* Default button background */
     color: currentColor;
     /* Default icon color */
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease-in-out;
+
+    &>* {
+        transition: none;
+    }
 
     &:hover {
         transform: scale(1.1);
-        background-color: #e0e0e0;
         cursor: pointer;
     }
 
@@ -150,6 +157,7 @@ p {
         /* Adjust SVG size */
         height: 60%;
         fill: currentColor;
+        transform: none;
     }
 }
 
@@ -171,6 +179,10 @@ p {
     color: white;
 }
 
+.fa-instagram {
+    background-color: none;
+    color: white
+}
 
 #linkedin {
     background-color: #007bb5;
@@ -182,6 +194,15 @@ p {
 
 #docker {
     background-color: #0db7ed;
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 110%,
+            #ffdb8b 0%,
+            #ee653d 25%,
+            #d42e81 50%,
+            #a237b6 75%,
+            #3e57bc 100%);
 }
 
 //Content expanders
