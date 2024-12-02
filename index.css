@@ -107,22 +107,24 @@ p {
   font-size: 18px;
 }
 
-.fa {
+.brand-btn {
   padding: auto;
-  font-size: 24px;
+  font-size: 16px;
   width: 50px;
   height: 50px;
   text-align: center;
   align-content: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
+  border-radius: 45%;
   scale: 1;
   transition: scale 0.8s ease;
+  padding: 12px;
 }
-.fa:hover {
+.brand-btn:hover {
   scale: 1.1;
   transition: scale 0.8s ease;
+  cursor: pointer;
 }
 
 .fa-linkedin {
@@ -132,6 +134,11 @@ p {
 
 .fa-github {
   background-color: #333333;
+  color: white;
+}
+
+.fa-docker {
+  background-color: #0db7ed;
   color: white;
 }
 
