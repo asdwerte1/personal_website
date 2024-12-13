@@ -1,8 +1,0 @@
-# General rule
-User-agent: *
-Disallow: /footerFiles/
-Disallow: /aboutMe/
-Disallow: /experience/
-Disallow: /gallery/
-Disallow: /projects/
-Disallow: /blog/
